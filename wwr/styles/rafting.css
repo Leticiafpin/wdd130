@@ -15,6 +15,10 @@
     --nav-hover-background-color: #5c4031;
 }
 
+header nav{
+  background-color: #223f23;
+}
+
 body{
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -33,15 +37,19 @@ p {
     padding: 25px;
 }
 
+nav {
+  display: flex;
+}
+
 nav a {
-    display: block;
+    display: flex;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
 
-nav{
-    background-color: var(--nav-background-color);
+nav a img{
+  width: 50px;
 }
 
 nav a:hover {
