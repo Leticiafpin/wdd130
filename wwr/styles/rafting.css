@@ -62,25 +62,26 @@ nav a:hover {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--primary-color)
+    color: #e2f556;
   }
 
 .hero article {
     position: absolute;
     bottom: 0;
+    top: 40%;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
-    color: #fff; 
     padding: 20px; 
   }
 
   .hero article img {
     float: right;
-    margin-left: 20px; /* Add some space between the image and the paragraph */
+    margin-left: 20px;
+    width: 200px;
   }
 
   .hero article::after {
@@ -91,4 +92,5 @@ nav a:hover {
 
   .hero article p {
    font-family: var(--paragraph-font);
+   color: #e2f556;
   }
