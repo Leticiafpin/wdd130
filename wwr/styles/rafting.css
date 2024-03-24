@@ -1,51 +1,74 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* Root variables for easy theme management */
 :root {
-    --primary-color: #5c4031;
-    --secondary-color: #223f23;
-    --accent1-color: #020200;
-    --accent2-color: #7d8a20;
+  --primary-color: #5c4031;
+  --secondary-color: #223f23;
+  --accent1-color: #020200;
+  --accent2-color: #7d8a20;
 
-    --heading-font: 'Rubik', sans-serif;
-    --paragraph-font: 'Work Sans', sans-serif;
+  --heading-font: 'Rubik', sans-serif;
+  --paragraph-font: 'Work Sans', sans-serif;
 
-    --nav-background-color: #223f23;
-    --nav-link-color: #7d8a20;
-    --nav-hover-link-color: #020200;
-    --nav-hover-background-color: #5c4031;
+  --nav-background-color: #223f23;
+  --nav-link-color: #7d8a20;
+  --nav-hover-link-color: #020200;
+  --nav-hover-background-color: #5c4031;
 }
 
-header nav{
-  background-color: #223f23;
+/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #223f23;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+/* Logo styles */
+header img {
+  height: 100px;
+  width: auto;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family:var(--heading-font) ;
-    color: var(--primary-color);
+  font-family:var(--heading-font) ;
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 
 
 p {
-    color: var(--accent1-color);
-    padding: 25px;
+  color: var(--accent1-color);
+  padding: 25px;
 }
 
+/* Navigation styles */
 nav {
   display: flex;
 }
 
 nav a {
-    display: flex;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1rem;
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 20px;
+  margin-right: 20px; 
 }
 
 nav a img{
@@ -53,52 +76,84 @@ nav a img{
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-    text-decoration: underline;
+  color: var(--nav-hover-background-color);
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .hero {
-    position: relative;
-  }
+  position: relative;
+}
 
 .hero img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-  }
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
 
 .hero h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #e2f556;
-  }
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e2f556;
+}
 
 .hero article {
-    position: absolute;
-    bottom: 0;
-    top: 40%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px; 
-  }
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+}
 
-  .hero article img {
-    float: right;
-    margin-left: 20px;
-    width: 200px;
-  }
+.hero article p {
+  margin: auto;
+  padding-top: 25%;
+  font-family: var(--paragraph-font);
+  color: #e2f556;
+}
 
-  .hero article::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.hero article img {
+  float: right;
+  margin-left: 20px;
+  width: 200px;
+}
 
-  .hero article p {
-   font-family: var(--paragraph-font);
-   color: #e2f556;
-  }
+.hero article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*adventure style*/
+.adventure .advimg {
+  display: flex;
+}
+
+.adventure figure {
+   margin: 10px;
+}
+
+.adventure figure img{
+  max-width: 100%;
+  height: auto;
+}
+
+.adventure figcaption{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer p{
+  display: flex;
+  justify-content: center;
+}
+
+footer nav{
+  display: flex;
+  justify-content: flex-end;
+}
