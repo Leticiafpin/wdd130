@@ -38,7 +38,7 @@
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box; /* So that width includes padding */
+    box-sizing: border-box;
   }
 
   input[type="submit"] {
