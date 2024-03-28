@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>HTML and CSS Quiz</title>
+        <meta name="description" content="The quiz will have basic questions about HTML and CSS.">
+        <meta name="author" content="Letícia Figueiredo">
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+
+<body>
+
+<h1>HTML and CSS Knowledge Quiz</h1>
+
+<form action="/submit-quiz" method="post">
+
+  <label for="q1">What does HTML stand for?</label>
+  <input type="text" id="q1" name="q1" required>
+
+  <br><br>
+
+  <label for="q2">Describe the purpose of CSS:</label>
+  <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
+
+  <br><br>
+
+  <label for="q3">What does the "a" in <code>&lt;a&gt;</code>tag stand for?</label>
+    <select id="q3" name="q3" required>
+        <option value="">Selecione uma opção</option>
+        <option value="anchor">anchor</option>
+        <option value="article">article</option>
+        <option value="array">array</option>
+    </select>
+
+  <br><br>
+
+  <label for="q4">How many main HTML tags are used to structure a web page?</label>
+  <input type="number" id="q4" name="q4" required>
+
+  <br><br>
+
+  <input type="submit" value="Submit Quiz">
+
+</form>
+
+</body>
+</html>
