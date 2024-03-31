@@ -157,3 +157,64 @@ footer nav{
   display: flex;
   justify-content: flex-end;
 }
+
+/*Employee style*/
+.employee .empimg {
+  display: flex;
+}
+
+.employee figure {
+   margin: 10px;
+}
+
+.employee figure img{
+  max-width: 100%;
+  height: auto;
+}
+
+.employee figcaption{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Add your custom styling here */
+/* For demonstration purposes, I'll keep it simple */
+
+/* Apply styles to labels */
+label {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: #223f23;
+  font-family: var(--paragraph-font);
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #223f23;
+  border-radius: 4px;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Style checkboxes */
+input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+/* Style submission button */
+button[type="submit"] {
+  background-color: #223f23;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}

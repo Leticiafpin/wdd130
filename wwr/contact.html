@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Club Contact | Letícia Figueiredo</title>
+    <meta name="description" content="The Contact Page on our website serves as a vital communication hub. It’s where visitors can easily connect with us, seek assistance, and share their thoughts. Whether you have questions, feedback, or need support, were just a click or call away.">
+    <meta name="author" content="Leticia Figueiredo">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>        
+    </header>
+    <main>
+        <section class="contact">
+            <br><br>
+            <h1>Contact</h1>
+            <p>Address: 7350 Hwy 76, Clayton, GA 30525, Estados Unidos
+                <br><br>
+                Phone number: +1 (555) 987-6543
+                <br><br>
+                Email: contact@raftingclubadventures.com 
+            </p>
+                
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26203.901063867037!2d-83.3282479401192!3d34.81883021023566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1711849757439!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <br><br>
+        
+        <section class="employee">
+            <h2>Our team</h2>
+            <div class="empimg">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Rafting Photo 1">
+                    <figcaption>Expedition Leader | Whitewater Navigation Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Rafting Photo 2">
+                    <figcaption>Rafting Instructor | Focus on Safety and Paddling Techniques</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Rafting Photo 3">
+                    <figcaption>Equipment Technician | Boat Maintenance and Preparation</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee4.jpg" alt="Rafting Photo 4">
+                    <figcaption>Team Coordinator | Management and Motivation of Rowers</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <br><br>
+
+        <Section id="form">
+            <h1>Contact Request</h1>
+            <br><br>
+            <form action="/submit-contact" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <br><br>
+
+                <label>Message Purpose:</label>
+                <br>
+                <input type="radio" id="general" name="purpose" value="Genera Iquiry" required>
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
+                
+                <br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <br><br>
+                
+                <button type="submit">Submit</button>
+            
+            </form>
+        </Section>
+    </main>
+    <footer>
+        <nav>
+        <p>©2024 Rafting Club | Letícia Figueiredo WDD130</p>
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.svg" alt="facebook">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="images/xtwitter.svg" alt="xtwitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.svg" alt="instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
