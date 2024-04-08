@@ -255,5 +255,64 @@ button[type="submit"] {
   border-radius: 20px;
 }
 .contact a:hover {
-  background-color: #0056b3;
+  background-color: #7d8a20;
+}
+
+/*home head stule*/
+.homeheading {
+  position: relative;
+}
+
+.homeheading img {
+  width: 100%; 
+  height: auto;
+ align-items: center;
+  } 
+
+.homeheading h2 {
+  width: 100%;
+  margin: 3%;
+  text-align: center;
+}
+
+.homeheading article {
+  left: 100%;
+  background-color: rgba(34, 63, 35, 0.7); 
+  padding: 10px;
+}
+
+.homeheading article p {
+  margin: auto;
+  padding-top: 10px;
+  font-family: var(--paragraph-font);
+  color: #5c4031;
+  font-weight: bold;
+}
+
+
+
+.homeheading article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Trip button style*/
+.tripbtn{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.tripbtn a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #5c4031;
+  margin: 30px;
+  padding: 10px 50px; 
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.tripbtn a:hover {
+  background-color: #7d8a20;
 }
