@@ -247,7 +247,7 @@ button[type="submit"] {
 .contactbtn a{
   text-decoration: none;
   color: #fff;
-  background-color: #223f23;
+  background-color: rgb(34, 63, 35);
   margin: 20px;
   padding: 10px 20px; 
   cursor: pointer;
@@ -277,7 +277,7 @@ button[type="submit"] {
 
 .homeheading article {
   left: 100%;
-  background-color: rgba(34, 63, 35, 0.7); 
+  background-color: rgba(34,63,35); 
   padding: 10px;
 }
 
@@ -298,6 +298,9 @@ button[type="submit"] {
 }
 
 /* Trip button style*/
+.trips h3{
+  text-align: center;
+}
 .tripbtn{
   width: 100%;
   text-align: center;
@@ -315,4 +318,11 @@ button[type="submit"] {
 }
 .tripbtn a:hover {
   background-color: #7d8a20;
+}
+
+.homeheading article h2{
+color: #e2f556;} 
+
+.homeheading article p{
+  color: #e2f556;
 }
